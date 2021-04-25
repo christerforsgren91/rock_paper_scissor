@@ -4,10 +4,14 @@ describe('user can navigate app', () => {
   })
 
   it('displays header', () => {
-    cy.get('[data-cy=header]').should('contain', 'WELCOME')
+    cy.get('[data-cy=header]').should('contain', 'Rock Paper Scissor')
   });
 
-  it('displays text', () => {
-    cy.get('[data-cy=text]').should('be.visible')
+  it('displays score', () => {
+    cy.get('[data-cy=score]').should('be.visible')
+  });
+
+  it('displays footer', () => {
+    cy.get('[data-cy=footer]').should('contain', 'Made With React')
   });
 })
