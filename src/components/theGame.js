@@ -1,6 +1,6 @@
 const computerPick = () => {
   let wepon
-  let pick = [Math.floor(Math.random() * 3)]
+  let pick = Math.floor(Math.random() * 3)
   if (pick === 0) {
     wepon = 'ROCK'
   }else if (pick === 1) {
@@ -12,7 +12,7 @@ const computerPick = () => {
 }
 
 const whoWins = (player) => {
-  let computer = computerPick()
+  const computer = computerPick()
   let winner
   if (player === 'ROCK' && computer === 'SCISSOR') {
     winner = 'player'
@@ -29,13 +29,7 @@ const whoWins = (player) => {
   }else if (player === computer) {
     winner = 'tie'
   }
-  return (winner, computer)
+  return winner
 }
 
-export {winner, computer}
-
-
-
-
-/*['rock', 'paper', 'scissors']
-theGame[Math.floor(Math.random() * 3)]*/
+export default whoWins

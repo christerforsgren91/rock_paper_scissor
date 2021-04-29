@@ -1,11 +1,11 @@
 import React from 'react'
-import Welcome from './Welcome.jsx'
 import Footer from './Footer'
+import Game from './Game.jsx'
 
 const App = () => 
 (
   <>
-    <Welcome />
+    <Game />
     <Footer />
   </>
 )
