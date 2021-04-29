@@ -67,10 +67,9 @@ const Game = () => {
         </Button>
       </Grid>
       </Segment>
-      <Grid textAlign="center">
-        <p data-cy="tie">{tie}</p>
-      </Grid>
-      
+        <Grid textAlign="center">
+          <h1 id='tie' data-cy="tie">{tie}</h1>
+        </Grid>
     </Container>
     
   );
