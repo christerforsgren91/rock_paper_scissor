@@ -26,8 +26,4 @@ describe('user can navigate app', () => {
     cy.get('[data-cy="player-score"]').should('contain', 'Player score')
     cy.get('[data-cy="computer-score"]').should('contain', 'Computer score')
   });
-
-  it('displays tie if player and computer pick the same', () => {
-    cy.get('[data-cy="tie"]').should('contain', "Its a tie, go again")
-  });
 })
